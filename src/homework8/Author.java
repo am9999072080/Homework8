@@ -2,9 +2,9 @@ package homework8;
 
 public class Author {
 
-    String name;
-    String surname;
-    String middleName;
+    private String name;
+    private String surname;
+    private String middleName;
 
     public Author(String name, String surname, String middleName) {
         this.name = name;
