@@ -1,14 +1,13 @@
 package homework8;
 
 public class Book {
-    private String poem;
-    private Author author;
+    private final String poem;
+    private final String author;
 
     private int publicationYear;
 
-
-    public Book(String poem, int publicationYear) {
-
+    public Book(String author, String poem, int publicationYear) {
+        this.author = author;
         this.poem = poem;
         this.publicationYear = publicationYear;
     }
@@ -17,8 +16,8 @@ public class Book {
         return this.poem;
     }
 
-    public Author getAuthor() {
-        return author;
+    public String getAuthor() {
+        return this.author;
     }
 
 
